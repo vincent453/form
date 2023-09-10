@@ -1,0 +1,23 @@
+{
+  "name": "newsletter-signup2",
+  "version": "1.0.0",
+  "description": "simple newsletter app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nod"
+  },
+  "author": "vincent",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.1.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
