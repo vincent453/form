@@ -1,33 +1,487 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/slate/bootstrap.min.css" integrity="sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body style="color: white;">
-  <div class="container">
-    <div class="content">
-      <form method="post" action="/form">
-        <img src="images/logo1.png" alt="" class="logo">
-        <h1>Newsletter Signup</h1>
-        <p>Enter your info to get my awesome monthly newsletter</p>
-        <div class="input">
-        <input type="text" name="name" placeholder="First Name" autocomplete="off"><br><br>
-        <!-- <input type="text" name="lName" placeholder="Last Name"><br><br> -->
-        <input type="email" name="email" placeholder="Email"><br><br>
-        <input type="password" name="password" placeholder="Password"><br><br>
-        <button  style="color: white;">Sign Up</button><br>
-        <a href="/login" class="log" style="font-family: sans-serif; color: white; font-size: 1rem;">Login in</a>
-      </div>
-      </form>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> UniV Store </title>
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="icon" href="/images/smart.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+   
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"> <img src="/images/logo.png" width="150px"> </a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li> <a href="index.html"> Home </a> </li>
+                            <li> <a href="products.html"> Products </a> </li>
+                            <li> <a href="About.html"> About </a> </li>
+                        </ul>
 
-    </div>
 
-  </div>
+                        <div class="buttons1">
+                            <a href="login-signup.html"><button type="button" name="button" class="btn1">  Login</button></a>
+                            <a href="login-signup.html"><button type="button" name="button" class="btn2"> Register</button></a>
+                        </div>
 
-</body>
+                    </nav>
+                    <a href="cart.html"> <img src="/images/buy2.png" width="50px" height="50px" class="to-buy"> </a>
+                    <img src="/products/bars.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                
+                <div class="row">
+                    <div class="col-2">
+                        <h1> Equip Yourself <br> With Only The Best </h1>
+                        <p> UniV Store brings to you the best of gadgets. Quality, Uniqueness and durability all in one place. The finest technology is available at your fingertips. </p>
+                        <a href="products.html" class="btn"> Explore Now &#8594; </a>
+                    </div>
+
+                    <div class="col-2">
+                        <img src="/products/alltransp.png">
+                    </div>
+                </div>
+            </div>  
+        </div>
+<!-------------------------------------------------------------------------->        
+<!-------------------------------------------------- FEATURED CAT ------------------------>
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="/products/laptop.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="/products/smart%20(5).png">
+                    </div>
+                    <div class="col-3">
+                        <img src="/products/vr.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------->        
+<!-------------------------------------------------- OTHER CAT ------------------------>
+        <div class="small-container">
+            <h2 class="title"> Featured Products </h2>
+            <div class="row">               
+                <div class="col-4">
+                    <img src="/products/airpod2.png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red Printed <br> T-Shirt </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-4">
+                    <img src="/products/smart.png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red Printed <br> T-Shirt </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-4">
+                    <img src="/products/laptop%20(2).png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red Printed <br> T-Shirt </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-4">
+                    <img src="/products/mouse.png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red Printed <br> T-Shirt </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+            
+            <h2 class="title"> Latest Products </h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="/products/key%20(2).png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> QWERTY <br> Keyboard </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="/products/neck%20(3).png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red Printed <br> T-Shirt </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="/products/smartwatch.png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red Printed <br> T-Shirt </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="/products/vr%20(2).png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red Printed <br> T-Shirt </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4">
+                    <img src="/products/headphone.png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red Printed <br> Headphone </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="/products/laptop%20(3).png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> Red <br> Laptop </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="/products/power%20(3).png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4>  <br> power bank </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="/products/singleairbud.png">
+                    <div class="rows">
+                        <div class="rowd">
+                            <h4> single <br> earbud </h4>
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p> $50.000 </p>
+                        </div>
+                        
+                        <div>
+                            <a href="details-4.html"> <img src="/images/buy2.png" width="50px" height="50px"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------->        
+<!-------------------------------------------------- OFFER ------------------------>
+        <div class="offer">
+            <div class="small-container">
+                <div class="rowo">
+                    <div class="col-oi">
+                        <img src="/products/laptop1.png" class="offer-img">
+                    </div>
+                    <div class="col-o">
+                        <p> Hot Selling Products on DeGiva </p>
+                        <h1> ThinkBook 16 Gen 4 </h1>
+                        <small> The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be. </small>
+                        <br> 
+                        <a href="" class="btn"> Buy Now &#8594; </a>
+                    </div>
+                </div>
+                <div class="rowo">
+                    <div class="col-o lefts">
+                        <p> Exclusively Available on RedStore </p>
+                        <h1> Smart Band 4 </h1>
+                        <small> The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be. </small>
+                        <br> 
+                        <a href="" class="btn"> Buy Now &#8594; </a>
+                    </div>
+                    <div class="col-oi left">
+                        <img src="/products/gold8.png" class="offer-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------->        
+<!-------------------------------------------------- TESTIMONIAL ------------------------>
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p> Success isn't always about greatness. it's about consistency. Consistent hard work gains success. Greatness will come. it's about consistency. Consistent hard work gains success. </p>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="/images/test1.jpg">
+                        <h3> Sean parker </h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p> Success isn't always about greatness. it's about consistency. Consistent hard work gains success. Greatness will come. it's about consistency. Consistent hard work gains success. </p>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="/images/test3.jpeg">
+                        <h3> Mike Smith </h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p> Success isn't always about greatness. it's about consistency. Consistent hard work gains success. Greatness will come. it's about consistency. Consistent hard work gains success. </p>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="/images/test2.jpg">
+                        <h3> Mabel Joe </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------->        
+<!-------------------------------------------------- BRANDS ------------------------>
+        <div class="highway">
+        
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="/images/Delta_logo.svg.png">
+                    </div>       
+                    <div class="col-5">
+                        <img src="/images/logs.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="/images/horace.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="/images/LOG.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="/images/Sophie's%20PNG.png">
+                    </div>
+                </div>
+            </div>
+        </div>     
+        
+        </div>
+<!-------------------------------------------------------------------------->        
+<!-------------------------------------------------- FOOTER ------------------------>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="footer-col-2">
+                        <img src="/images/logo.png">
+                        <p> Our Purpose is to Sustainably Make the Pleasure and Benefits of Sports Accessible to Many and get quality goods for your use </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3> Useful Links </h3>
+                        <ul>
+                            <li> <a href=""> Coupons </a> </li>
+                            <li> <a href=""> Blog Post </a> </li>
+                            <li> <a href=""> Return Policy </a> </li>
+                            <li> <a href=""> Join Affiliate </a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3> Follow Us </h3>
+                        <ul>
+                            <li> <a href="https://www.facebook.com"> <i class="fa fa-facebook"></i> </a> </li>
+                            <li> <a href="https://twitter.com"> <i class="fa fa-twitter"></i> </a> </li>
+                            <li> <a href="https://www.instagram.com"> <i class="fa fa-instagram"></i></a> </li>
+                            <li> <a href="https://www.youtube.com"> <i class="fa fa-youtube"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <hr>
+                <p class="copyright"> Copyright 2022 - UniV Store </p>
+        </div>
+<!-------------------------------------------------------------------------->        
+<!-------------------------------------------------- JAVASCRIPT ------------------------>
+
+ 
+        <script>
+        
+     var MenuItems = document.getElementById("MenuItems");            
+     
+     MenuItems.style.maxHeight = "0px";
+     
+     function menutoggle(){
+         if(MenuItems.style.maxHeight == "0px")
+             {
+                 MenuItems.style.maxHeight = "300px";
+             }
+         else
+             {
+                 MenuItems.style.maxHeight = "0px";
+             }
+     }
+        </script>
+        
+    </body>
 </html>
+
+

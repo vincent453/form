@@ -11,20 +11,23 @@
 <body style="color: white;">
   <div class="container">
     <div class="content">
-      <form method="post" action="/login">
+      <form method="post" action="/form">
         <img src="/images/logo1.png" alt="" class="logo">
-        <h1>Newsletter login</h1>
+        <h1>Newsletter Signup</h1>
         <p>Enter your info to get my awesome monthly newsletter</p>
         <div class="input">
         <input type="text" name="name" placeholder="First Name" autocomplete="off"><br><br>
         <!-- <input type="text" name="lName" placeholder="Last Name"><br><br> -->
+        <input type="email" name="email" placeholder="Email"><br><br>
         <input type="password" name="password" placeholder="Password"><br><br>
-        <button style="color: white;">Log in</button>
+        <button  style="color: white;">Sign Up</button><br>
+        <a href="/login" class="log" style="font-family: sans-serif; color: white; font-size: 1rem;">Login in</a>
       </div>
       </form>
 
     </div>
 
   </div>
+
 </body>
 </html>
